@@ -7,22 +7,18 @@ function solveEquation(a, b, c) {
   if (d>0){
     let x1=(-b + Math.sqrt(d) )/(2*a)
     let x2=(-b - Math.sqrt(d) )/(2*a)
-    arr=[x1,x2]
     //console.log("KKK",x1,x2)
-    
+  arr=[x1,x2]
+
   } else if (d==0){
-    x1=-b/(2*a)
-    arr=[x1]
-   
-  } else if (d<0){
-     arr=[x1,x2]
-  }
-    
-  return arr;
+   let x1=-b/(2*a)
+   arr=[x1]
+     }
+     
+    return arr;
 }
 //const result=solveEquation(1,5,4)
 //console.log("jjj",result)
-
 function calculateTotalMortgage(percent, contribution, amount, countMonths) {
   
 }
